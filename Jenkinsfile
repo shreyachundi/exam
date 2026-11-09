@@ -11,7 +11,7 @@ pipeline{
             steps{
                 echo 'Run the docker image'
                 sh 'docker rm -f mycontainer || exit 0'
-                sh 'docker run -d -p 5003:5003 --name mycontainer mypythonflaskapp'
+                sh 'docker run -d -p 5002:5002 --name mycontainer mypythonflaskapp'
             }
         }
     }
