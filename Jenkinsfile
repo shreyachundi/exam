@@ -15,12 +15,12 @@ pipeline{
             }
         }
     }
-    post(
+    post{
         success{
-            echo 'Pipeline successfull'
+            echo 'The pipeline has completed successfully.'
         }
         failure{
-            echo 'Pipeline failed'
+            echo 'The pipeline has failed.'
         }
-    )
+    }
 }
